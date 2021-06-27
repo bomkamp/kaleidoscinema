@@ -2,6 +2,8 @@
 
 Adds a color palette of prominent colors to your specified image.
 
+See my [gallery of resulting images](https://www.instagram.com/kaleidoscinema/)
+
 # run locally
 
 > Not currently in NPM, may create a package later
