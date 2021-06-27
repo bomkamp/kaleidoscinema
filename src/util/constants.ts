@@ -1,0 +1,4 @@
+export const DEFAULT_IMAGE_HEIGHT = 1080;
+export const DEFAULT_IMAGE_WIDTH = 1080;
+export const DEFAULT_PALETTE_COLORS = 7;
+export const DEFAULT_PALETTE_RATIO = .2;

@@ -16,6 +16,7 @@
 /test-reports/
 build/Release
 coverage
+in
 jspm_packages/
 junit.xml
 lerna-debug.log*
@@ -23,6 +24,7 @@ lib-cov
 logs
 node_modules/
 npm-debug.log*
+output
 pids
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 yarn-debug.log*

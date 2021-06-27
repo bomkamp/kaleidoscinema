@@ -2,12 +2,25 @@ const { TypeScriptAppProject } = require('projen');
 const project = new TypeScriptAppProject({
   defaultReleaseBranch: 'main',
   name: 'kaleidoscinema',
-
-  // deps: [],                          /* Runtime dependencies of this module. */
-  // description: undefined,            /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],                       /* Build dependencies for this module. */
-  // packageName: undefined,            /* The "name" in package.json. */
-  // projectType: ProjectType.UNKNOWN,  /* Which type of project this is (library/app). */
-  // release: undefined,                /* Add release management to this project. */
+  deps: [
+    'get-image-colors@4.0.0',
+    'jimp@0.16.1',
+    'commander@8.0.0',
+  ],
+  devDeps: [
+    '@types/get-image-colors@4.0.0',
+  ],
+  tsconfig: {
+    compilerOptions: {
+      esModuleInterop: true,
+    },
+  },
+  bin: {
+    kaleido: './bin/kaleido.js',
+  },
+  gitignore: [
+    "output",
+    "in"
+  ]
 });
 project.synth();

@@ -1,5 +1,8 @@
 {
   "name": "kaleidoscinema",
+  "bin": {
+    "kaleido": "./bin/kaleido.js"
+  },
   "scripts": {
     "clobber": "npx projen clobber",
     "compile": "npx projen compile",
@@ -17,6 +20,7 @@
     "start": "npx projen start"
   },
   "devDependencies": {
+    "@types/get-image-colors": "4.0.0",
     "@types/jest": "^26.0.23",
     "@types/node": "^10.17.0",
     "@typescript-eslint/eslint-plugin": "^4.28.0",
@@ -32,6 +36,11 @@
     "projen": "^0.24.12",
     "ts-jest": "^27.0.3",
     "typescript": "^4.3.4"
+  },
+  "dependencies": {
+    "commander": "8.0.0",
+    "get-image-colors": "4.0.0",
+    "jimp": "0.16.1"
   },
   "bundledDependencies": [],
   "license": "Apache-2.0",
