@@ -19,8 +19,8 @@ const project = new TypeScriptAppProject({
     kaleido: './bin/kaleido.js',
   },
   gitignore: [
-    "output",
-    "in"
-  ]
+    'output',
+    'in',
+  ],
 });
 project.synth();
